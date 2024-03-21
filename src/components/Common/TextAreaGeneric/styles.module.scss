@@ -1,0 +1,13 @@
+@import '../../../styles/colors.module.scss';
+
+.textAreaEncrytor {
+  resize: none;
+  border: 0 none;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: 1.2rem;
+
+  &:focus {
+    outline: none;
+  }
+}

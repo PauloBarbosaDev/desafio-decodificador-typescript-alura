@@ -1,0 +1,23 @@
+@import '../../../styles/colors.module.scss';
+
+.btnGeneric {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  width: 11rem;
+  height: 2.2rem;
+
+  &:hover {
+    color: $white-color;
+    background-color: $primary-color;
+    transition: 0.2s;
+  }
+}
+
+.activedButton {
+  color: $white-color;
+  background-color: $primary-color;
+}
