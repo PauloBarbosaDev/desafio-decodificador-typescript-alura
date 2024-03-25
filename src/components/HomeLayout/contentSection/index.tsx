@@ -1,13 +1,32 @@
 import TextAreaGeneric from '../../Common/TextAreaGeneric';
 import Footer from './Footer';
 import styles from './styles.module.scss';
+import useEncrypter from '../../../hooks/useEncrypter';
 
 const ContentSection = () => {
+  const {
+    sourceText,
+    resultMessage,
+    handleSourceTextAreaChange,
+    handleEncrypText,
+    handleDecrypText,
+  } = useEncrypter();
+
   return (
     <>
       <section className={styles.content}>
-        <TextAreaGeneric />
-        <Footer />
+        <TextAreaGeneric
+          name="sourceTextArea"
+          id="sourceTextArea"
+          text="Digite o texto"
+          value={sourceText}
+          onChange={handleSourceTextAreaChange}
+        />
+        <Footer
+          encryptOnClick={handleEncrypText}
+          decryptOnClick={handleDecrypText}
+          resultMessage={resultMessage}
+        />
       </section>
     </>
   );

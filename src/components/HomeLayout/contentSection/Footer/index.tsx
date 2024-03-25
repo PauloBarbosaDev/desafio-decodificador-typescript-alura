@@ -1,7 +1,13 @@
 import BtnGeneric from '../../../Common/BtnGeneric';
 import styles from './styles.module.scss';
 
-const Footer = () => {
+interface props {
+  encryptOnClick?: () => void;
+  decryptOnClick?: () => void;
+  resultMessage: string;
+}
+
+const Footer = ({ encryptOnClick, decryptOnClick, resultMessage }: props) => {
   return (
     <>
       <section className={styles.footer}>
@@ -10,11 +16,22 @@ const Footer = () => {
             src="../../../../homeLayout/bi_exclamation-circle-fill.svg"
             alt=""
           />
-          <p id="msgResult">Apenas letras minúsculas e sem acento.</p>
+          <p id="msgResult">{resultMessage}</p>
         </div>
         <div className={styles.buttons}>
-          <BtnGeneric customClass="activedButton" content="Encryptar" />
-          <BtnGeneric content="Decryptar" />
+          <BtnGeneric
+            customClass="activedButton"
+            content="Encryptar"
+            onClick={encryptOnClick}
+            id=""
+            name=""
+          />
+          <BtnGeneric
+            content="Decryptar"
+            onClick={decryptOnClick}
+            id=""
+            name=""
+          />
         </div>
       </section>
     </>
