@@ -10,7 +10,7 @@ const App = () => {
     <EncrypterProvider>
       <main>
         <HeaderLayout />
-        <Container className="flex-grow-1  mt-5 teste flex-flex-shrink-0">
+        <Container fluid className="  mt-5 flex-flex-shrink-0 flex-grow-1">
           <Row>
             <Col md={8} className="mt-5">
               <ContentSection />

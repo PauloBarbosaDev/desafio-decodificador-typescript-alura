@@ -12,7 +12,6 @@
 
   textarea {
     background-color: $white-color;
-    // background-color: $white-color;
     font-size: 0.9rem;
   }
 
@@ -34,6 +33,26 @@
       font-size: 0.6875rem;
       color: $light-text-color;
       line-height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aside {
+    width: 100%;
+    gap: 1.5rem;
+    min-height: 4rem;
+
+    textarea {
+      font-size: 0.9rem;
+    }
+
+    .asideImg {
+      display: none;
+    }
+
+    button {
+      width: auto;
     }
   }
 }

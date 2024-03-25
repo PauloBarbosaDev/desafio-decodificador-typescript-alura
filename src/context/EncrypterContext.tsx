@@ -79,6 +79,10 @@ export const EncrypterProvider = ({ children }: { children: ReactNode }) => {
     if (!isEncrypt && !isEncrypted) {
       setResultMessage(`O valor não está criptografado para continuar.`);
       setSourceText('');
+      setCopyButtonVisible(false);
+      setTargetTextAreaVisible(false);
+      setAsideImgVisible(true);
+      setAsideTexts(true);
       return '';
     }
 

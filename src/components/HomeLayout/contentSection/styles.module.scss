@@ -4,3 +4,15 @@
   gap: 15rem;
   margin-left: 5rem;
 }
+
+@media (max-width: 768px) {
+  .content {
+    margin: 0;
+    width: 100%;
+
+    textarea {
+      font-size: 1.7rem;
+      min-height: 10rem;
+    }
+  }
+}

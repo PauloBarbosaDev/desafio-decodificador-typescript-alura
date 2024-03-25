@@ -10,18 +10,16 @@ interface props {
 
 const BtnGeneric = ({ customClass, content, onClick, name, id }: props) => {
   return (
-    <>
-      <button
-        className={`${styles[customClass !== undefined ? customClass : '']} ${
-          styles.btnGeneric
-        }`}
-        name={name}
-        id={id}
-        onClick={() => onClick && onClick()}
-      >
-        {content}
-      </button>
-    </>
+    <button
+      className={`${styles[customClass !== undefined ? customClass : '']} ${
+        styles.btnGeneric
+      }`}
+      name={name}
+      id={id}
+      onClick={() => onClick && onClick()}
+    >
+      {content}
+    </button>
   );
 };
 

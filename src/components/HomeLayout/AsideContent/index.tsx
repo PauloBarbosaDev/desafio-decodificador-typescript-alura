@@ -13,11 +13,10 @@ const AsideContent = () => {
     asideTexts,
   } = useEncrypter();
 
-  // Use o hook useCopy para obter a função de cópia de texto
   const copyText = useCopy();
 
   const handleCopy = () => {
-    copyText(targetText); // Chame a função de cópia de texto com o texto alvo
+    copyText(targetText);
   };
 
   return (
@@ -35,7 +34,7 @@ const AsideContent = () => {
 
         <img
           id="asideImg"
-          className="mainContent--aside-img"
+          className={styles.asideImg}
           src="../../../../homeLayout/asideImg.svg"
           alt="Imagem do Aside"
           style={{ visibility: asideImgVisible ? 'visible' : 'hidden' }}
