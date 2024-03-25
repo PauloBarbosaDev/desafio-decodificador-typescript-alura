@@ -1,4 +1,5 @@
 import useEncrypter from '../../../hooks/useEncrypter';
+import useCopy from '../../../hooks/useCopy'; // Importe o hook useCopy
 import BtnGeneric from '../../Common/BtnGeneric';
 import TextAreaGeneric from '../../Common/TextAreaGeneric';
 import styles from './styles.module.scss';
@@ -11,6 +12,14 @@ const AsideContent = () => {
     asideImgVisible,
     asideTexts,
   } = useEncrypter();
+
+  // Use o hook useCopy para obter a função de cópia de texto
+  const copyText = useCopy();
+
+  const handleCopy = () => {
+    copyText(targetText); // Chame a função de cópia de texto com o texto alvo
+  };
+
   return (
     <>
       <aside className={styles.aside}>
@@ -44,7 +53,12 @@ const AsideContent = () => {
         </div>
 
         {copyButtonVisible && (
-          <BtnGeneric name="copyButton" id="copyButton" content="Copiar" />
+          <BtnGeneric
+            name="copyButton"
+            id="copyButton"
+            content="Copiar"
+            onClick={handleCopy}
+          />
         )}
       </aside>
     </>
