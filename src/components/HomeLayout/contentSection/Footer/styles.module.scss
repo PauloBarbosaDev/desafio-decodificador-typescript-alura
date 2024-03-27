@@ -37,8 +37,10 @@
 }
 
 @media (max-width: 425px) {
-  button {
-    width: 25.1rem;
+  .buttons {
+    button {
+      width: 25rem;
+    }
   }
 }
 

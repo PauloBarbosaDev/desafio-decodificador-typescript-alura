@@ -1,10 +1,21 @@
 .header {
   flex-basis: auto;
-  padding: 2rem 0;
+  padding: 2rem 1.2rem;
   position: absolute;
 
   .headerLogo {
-    width: 6rem;
-    height: 2.2rem;
+    width: 5.5rem;
+    height: 2.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 0rem;
+
+    .headerLogo {
+      width: 4.4rem;
+      height: 2.1rem;
+    }
   }
 }
