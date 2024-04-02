@@ -96,6 +96,28 @@ Após criar um Pull Request, nossa equipe revisará suas alterações e fornecer
 - Respeite as convenções de nomenclatura existentes.
 - Documente adequadamente as alterações, recursos ou correções.
 
+## 🏃‍♀️ Iniciando a Aplicação
+
+Para iniciar a aplicação, você pode executar um dos seguintes comandos, dependendo do seu gerenciador de pacotes preferido:
+
+### Com npm:
+
+```
+npm run dev
+```
+
+ou
+
+```
+yarn dev
+```
+
+ou
+
+```
+pnpm dev
+```
+
 #
 
 **_Agradecemos pela sua contribuição e esperamos trabalhar juntos para tornar o Decodificador ainda melhor. Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato conosco. Juntos, podemos criar uma aplicação mais robusta e eficiente._**
