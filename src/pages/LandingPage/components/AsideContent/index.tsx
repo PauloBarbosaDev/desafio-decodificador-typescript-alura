@@ -1,7 +1,7 @@
-import useEncrypter from '../../../hooks/useEncrypter';
-import useCopy from '../../../hooks/useCopy'; // Importe o hook useCopy
-import BtnGeneric from '../../Common/BtnGeneric';
-import TextAreaGeneric from '../../Common/TextAreaGeneric';
+import useCopy from '../../../../hooks/useCopy';
+import useEncrypter from '../../../../hooks/useEncrypter';
+import BtnGeneric from '../Common/BtnGeneric';
+import TextAreaGeneric from '../Common/TextAreaGeneric';
 import styles from './styles.module.scss';
 
 const AsideContent = () => {

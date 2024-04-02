@@ -1,4 +1,4 @@
-import BtnGeneric from '../../../Common/BtnGeneric';
+import BtnGeneric from '../../Common/BtnGeneric';
 import styles from './styles.module.scss';
 
 interface props {

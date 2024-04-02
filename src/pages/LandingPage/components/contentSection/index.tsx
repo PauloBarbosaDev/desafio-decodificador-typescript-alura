@@ -1,7 +1,7 @@
-import TextAreaGeneric from '../../Common/TextAreaGeneric';
+import useEncrypter from '../../../../hooks/useEncrypter';
+import TextAreaGeneric from '../Common/TextAreaGeneric';
 import Footer from './Footer';
 import styles from './styles.module.scss';
-import useEncrypter from '../../../hooks/useEncrypter';
 
 const ContentSection = () => {
   const {
