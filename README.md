@@ -118,6 +118,22 @@ ou
 pnpm dev
 ```
 
+## 💻 Exemplos de uso
+
+Abaixo deixo exemplos de uso:
+
+### Se apertar em encryptar escrevendo "gato":
+
+```
+a saida deve ser:gaitober
+```
+
+### Se apertar em decryptar escrevendo "gaitober":
+
+```
+a saida deve ser:gato
+```
+
 #
 
 **_Agradecemos pela sua contribuição e esperamos trabalhar juntos para tornar o Decodificador ainda melhor. Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato conosco. Juntos, podemos criar uma aplicação mais robusta e eficiente._**
