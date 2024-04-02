@@ -9,10 +9,10 @@ O **Decodificador** de Mensagens é uma aplicação que permite **decifrar** men
 <div align='center'>
     <img align='center' height='50' width='70' title='TypeScript' alt='typescript' src='https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg' />
     <img align='center' height='50' width='70' title='React' alt='react' src='https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg' />
-    <img align='center' height='50' width='70' title='Vite' alt='vite' src='https://github.com/vitejs/vite/blob/main/logo.svg' />
-    <img align='center' height='55' width='70' title='Bootstrap' alt='bootstrap' src='https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain-wordmark.svg' />
-    <img align='center' height='54' width='68' title='Reactstrap' alt='reactstrap' src='https://reactstrap.github.io/assets/logo.png' /> &nbsp;
-    <img align='center' height='49' width='49' title='Sass' alt='sass' src='https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg' /> &nbsp;
+    <img align='center' height='50' width='70' title='Vite' alt='vite' src='https://github.com/devicons/devicon/blob/master/icons/vite/vite-original.svg' />
+    <img align='center' height='55' width='70' title='Bootstrap' alt='bootstrap' src='https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg' />
+    <img align='center' height='54' width='68' title='Reactstrap' alt='reactstrap' src='https://github.com/devicons/devicon/blob/master/icons/reactbootstrap/reactbootstrap-original.svg' /> &nbsp;
+    <img align='center' height='49' width='49' title='Sass' alt='sass' src='https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg' /> &nbsp;
 </div>
 
 # 🖋️ Contribuindo para o Codificador/Decodificador
