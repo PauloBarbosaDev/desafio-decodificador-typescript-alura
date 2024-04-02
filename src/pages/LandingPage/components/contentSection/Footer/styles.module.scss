@@ -13,7 +13,6 @@
 .buttons {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap;
 
   button {
     width: 15rem;
@@ -29,15 +28,17 @@
     display: flex;
     gap: 1.5rem;
     justify-content: space-between;
+    flex-wrap: nowrap;
 
     button {
-      width: 22rem;
+      width: 100%;
     }
   }
 }
 
 @media (max-width: 425px) {
   .buttons {
+    flex-wrap: wrap;
     button {
       width: 25rem;
     }
