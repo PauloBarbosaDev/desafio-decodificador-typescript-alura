@@ -1,8 +1,9 @@
-import useCopy from '../../../../hooks/useCopy';
-import useEncrypter from '../../../../hooks/useEncrypter';
-import BtnGeneric from '../Common/BtnGeneric';
-import TextAreaGeneric from '../Common/TextAreaGeneric';
-import styles from './styles.module.scss';
+import useCopy from "../../../../hooks/useCopy";
+import useEncrypter from "../../../../hooks/useEncrypter";
+import BtnGeneric from "../Common/BtnGeneric";
+import TextAreaGeneric from "../Common/TextAreaGeneric";
+import ToastComponent from "../Common/Toast";
+import styles from "./styles.module.scss";
 
 const AsideContent = () => {
   const {
@@ -11,6 +12,9 @@ const AsideContent = () => {
     targetTextAreaVisible,
     asideImgVisible,
     asideTexts,
+    toastColor,
+    toastIsOpen,
+    toastMessage,
   } = useEncrypter();
 
   const copyText = useCopy();
@@ -37,13 +41,13 @@ const AsideContent = () => {
           className={styles.asideImg}
           src="../../../../homeLayout/asideImg.svg"
           alt="Imagem do Aside"
-          style={{ visibility: asideImgVisible ? 'visible' : 'hidden' }}
+          style={{ visibility: asideImgVisible ? "visible" : "hidden" }}
         />
 
         <div
           id="textElements"
           className={styles.asideCaption}
-          style={{ visibility: asideTexts ? 'visible' : 'hidden' }}
+          style={{ visibility: asideTexts ? "visible" : "hidden" }}
         >
           <h2>Nenhuma mensagem encontrada</h2>
           <p>
@@ -60,6 +64,11 @@ const AsideContent = () => {
           />
         )}
       </aside>
+      <ToastComponent
+        color={toastColor}
+        isOpen={toastIsOpen}
+        message={toastMessage}
+      />
     </>
   );
 };

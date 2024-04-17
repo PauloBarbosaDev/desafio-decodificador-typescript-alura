@@ -14,6 +14,9 @@ interface EncryptContextProps {
   handleSourceTextAreaChange: (ev: ChangeEvent<HTMLTextAreaElement>) => void;
   handleEncrypText: () => void;
   handleDecrypText: () => void;
+  setToastColor: React.Dispatch<React.SetStateAction<string>>;
+  setToastIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setToastMessage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface EncryptionMap {
@@ -148,6 +151,9 @@ export const EncrypterProvider = ({ children }: { children: ReactNode }) => {
     handleSourceTextAreaChange,
     handleEncrypText,
     handleDecrypText,
+    setToastColor,
+    setToastIsOpen,
+    setToastMessage,
   };
 
   return (
