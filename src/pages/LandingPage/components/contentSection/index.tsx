@@ -1,12 +1,16 @@
-import useEncrypter from '../../../../hooks/useEncrypter';
-import TextAreaGeneric from '../Common/TextAreaGeneric';
-import Footer from './Footer';
-import styles from './styles.module.scss';
+import useEncrypter from "../../../../hooks/useEncrypter";
+import TextAreaGeneric from "../Common/TextAreaGeneric";
+import ToastComponent from "../Common/Toast";
+import Footer from "./Footer";
+import styles from "./styles.module.scss";
 
 const ContentSection = () => {
   const {
     sourceText,
     resultMessage,
+    toastColor,
+    toastIsOpen,
+    toastMessage,
     handleSourceTextAreaChange,
     handleEncrypText,
     handleDecrypText,
@@ -28,6 +32,11 @@ const ContentSection = () => {
           resultMessage={resultMessage}
         />
       </section>
+      <ToastComponent
+        color={toastColor}
+        isOpen={toastIsOpen}
+        message={toastMessage}
+      />
     </>
   );
 };

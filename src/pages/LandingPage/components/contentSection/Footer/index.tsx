@@ -1,5 +1,5 @@
-import BtnGeneric from '../../Common/BtnGeneric';
-import styles from './styles.module.scss';
+import BtnGeneric from "../../Common/BtnGeneric";
+import styles from "./styles.module.scss";
 
 interface props {
   encryptOnClick?: () => void;
